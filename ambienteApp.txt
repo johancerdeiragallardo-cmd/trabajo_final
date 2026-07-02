@@ -1,0 +1,11 @@
+######### Crear ambiente de trabajo para la app ###################
+
+conda create -n geoapp python=3.11 -y
+conda activate geoapp
+conda install -c conda-forge geopandas folium rasterio matplotlib numpy pillow -y
+pip install streamlit streamlit-folium
+
+
+############# Ejecutar la app ########################
+
+python -m streamlit run app.py
